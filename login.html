@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+<style>
+body{font-size: 12px;
+color:#666;
+width:1349px;
+height:683px;}
+header{
+width: 990px;
+height: 67px;
+margin: 0 auto;
+border-bottom: 2px solid #dc5751;
+overflow: hidden;}
+.header_left{
+float: left;
+}
+.header_right{
+text-align:left;
+width: 185px;
+height: 14px;
+float: right;
+margin: 35px 10px 0 0;
+}
+.header_right a{text-decoration: none;
+color:#666;}
+.header_right a:hover{
+color:#d95854;
+text-decoration: none;}
+.help{padding-left:20px;}
+.login{
+margin-left:180px;
+width: 990px;;
+height:588px;
+color: #676767;
+font-size: 14px;
+float: left;
+display: inline;
+}
+.login_left{float: left;
+    width: 490px;
+    height: 588px;}
+.login_right{
+	margin-top:40px;
+	float:left;
+	width:306px;
+	height:442px;
+	text-align: left;
+    font-style: normal;
+    color: #676767;}
+	.logintab span{color: #676767;
+    font-size: 14px;
+    vertical-align: bottom;
+	    text-align: left;
+    font-style: normal;}
+	#username,#pwd{height: 25px;
+    width: 280px;
+    margin-top: 20px;
+	border:1px solid #ccc;
+	border-radius:5px;
+	box-shadow:#ccc 2px 2px 5px;
+	padding:5px;
+   }
+   #pwd{ margin-top: 10px;}
+   .login_right a.forgetpwd{
+	   color:#999;
+		text-decoration:underline;
+		margin-left:220px;
+		display:block;
+		margin-top:10px;
+		font-size: 12px;
+    line-height: 20px;
+}
+.login_right a.register{    display: block;
+    float: left;
+    font-size: 11px;
+    margin-top: 33px;
+    margin-left: 5px;
+    color: #368427;
+    background: #ecf7ef;
+    padding: 5px;}
+#btn_login{width: 138px;
+    height: 50px;
+   	float:left;
+    cursor: pointer;
+    margin: 20px 0 20px 0;
+	background:#0E7E05;
+	color:#fff;
+	border:1px solid #0E7E05;
+	border-radius:5px;
+	font-size:25px;}
+	.loginRight{margin: 75px 0 5px 5px;
+	height:30px;
+	display:block;
+	border-top:2px solid #ddd;;
+	padding:15px 5px 0 0;
+	font-size: 12px;
+	    color: #999;
+}
+</style>
+	</head>
+	<body>
+	<header>
+		<div class="header">
+			<div class="header_left">
+				<a href="#"><img src="img/headerlogo.png" alt=""/></a>
+			</div>
+			<div class="header_right">
+				<div class="nologin">
+					<a href="">登录
+					</a><span>|</span>
+					<a class="register" href="">注册</a>
+                    <span>|</span>
+					<a class="myokbuy" href="">我的账户</a>
+                    <a  class="help" href="">帮助</a>
+				</div>
+			</div>
+		</div>
+	</header>
+    
+	<section>
+		<div class="login">
+    		<div class="login_left">
+        	<a href="">
+            	<img src="img/login.jpg" alt="">
+            </a>
+        </div>
+		<form action="">
+			<div class="login_right">
+        	<div class="logintab">
+				<span>邮箱/已验证手机/用户名：</span>
+			</div>
+            <div id="userLogin">
+            	<input id="username" type="text" name="username">
+				<p>密码:</p>
+			 <input id="pwd" type="password" name="password">
+				<a href="" class="forgetpwd">忘记密码？</a>
+            <div>
+            <button id="btn_login">登录</button>
+            <a class="register" href="">没有好乐买账号？10秒注册</a>
+            <br>
+			<a class="loginRight">你还可以使用这些网站的账号直接登录好乐买： </a>     
+			<p>
+			<a href=""><img src="img/login_QQ.gif" alt=""></a>
+			<a href=""><img src="img/login_sinaweibo.gif" alt=""></a>
+			<a href=""><img src="img/login_zhifubao.gif" alt=""></a>
+			</p> 
+		</div>
+		</form>
+	</section>
+</body>
+</html>

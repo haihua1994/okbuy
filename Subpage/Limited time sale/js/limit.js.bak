@@ -1,0 +1,94 @@
+/***滑动到某位置是设置固定定位*****/
+document.addEventListener("scroll",function(){
+	var totalTop=$(".top_temai").offset().top;
+	var scrollTop=$("body").scrollTop();
+	//console.log(scrollTop);
+	if(totalTop<=scrollTop){
+		$(".top_temai").addClass("fixed");
+	}
+	if(scrollTop<=505){
+		$(".top_temai").removeClass("fixed");
+	}
+});
+/**********功能5：实现商品倒计时效果********/
+
+//Step1: 定义任务函数，计算now到end的时间差
+function task(){
+  //定义目标时间end: 2016/9/13 12:00
+  var end=new Date("2016/11/30 12:00");
+  var now=new Date();//获得当前时间now
+  //获得时间差(s): end-now /1000
+  var s=Math.round((end-now)/1000);
+  if(s>0){//如果s>0
+	  var day=Math.floor(s/(3600*24));//求天数
+    var h=Math.floor(s/3600)-day*24;//求小时(h): 
+   // h<10&&(h="0"+h);//如果h<10,就改为0+h
+    var m=Math.floor(s%3600/60);//求分钟(m):
+    m<10&&(m="0"+m);//如果m<10,就改为0+m
+    s%=60;//求秒(s):
+    s<10&&(s="0"+s);//如果s<10,就改为0+s
+   
+	  var html="<b>仅剩</b>"+day+"<b>天</b>" + h+"<b>时</b>" + m+"<b>分</b>" + s+"<b>秒</b>";
+	$('#time').html(html);
+     $('#time1').html(html);
+	  $('#time2').html(html);
+	  $('#time3').html(html);
+	  $('#time4').html(html);
+	  $('#time5').html(html);
+	  $('#time6').html(html);
+	  $('#time7').html(html);
+	  $('#time8').html(html);
+	  $('#time9').html(html);
+	  $('#time10').html(html);
+	  $('#time11').html(html);
+	  $('#time12').html(html);
+	  $('#time13').html(html);
+	  $('#time14').html(html);
+	  $('#time15').html(html);
+	  $('#time16').html(html);
+	  $('#time17').html(html);
+	  $('#time18').html(html);
+	  $('#time19').html(html);
+	  //$('#time20').html(html);
+	  //$('#time21').html(html);
+	  //$('#time22').html(html);
+	  //$('#time23').html(html);
+	  //$('#time24').html(html);
+	  //$('#time25').html(html);
+	   //$('#time3').html(html);
+	   //document.getElementById("time3").innerHTML=html;
+  }else{
+    //停止定时器
+    clearInterval(timer);
+    timer=null;
+    document.getElementsByClassName("time")
+            .innerHTML="活动结束！";
+  }
+}
+task();
+var timer=setInterval(task,1000);
+
+
+
+$(window).ready(function(){
+	$.ajax({
+      url: 'data/product_list.php',
+      success: function(list, msg, xhr){
+        console.log('开始处理响应数据');
+        var html = '';
+        $.each(list, function(i,auto){
+          html += `
+          <li>
+					<img src="common_img/${auto.pic}">
+					<span class="tit1">秋冬新品 特惠优选</span>
+					<span class="tit2">马克华品牌专场</span>
+					<span class="tit3"></span>
+					<span class="tit4" id="time">
+					</span>
+		</li>
+          `;
+        });
+        $('.main_shop').html(html);
+      }
+    })
+});

@@ -1,0 +1,61 @@
+#main{background:#fff;}
+.section-item1,.section-item3{height:30px;float:left;
+width:1200px;padding:10px 0;
+border-bottom:1px dotted #ddd;}
+.item{margin-left:36px;float:left;}
+.all a{margin-left:50px;background:#D70057;color:#fff;float:left;
+padding:3px 8px 4px;}
+.w1200 a:hover{text-decoration:none;color:#666;}
+.man{margin-left:20px;}
+.women{margin-left:120px;}
+.section-item2{height:50px;float:left;padding:10px 0;
+width:1200px;
+border-bottom:1px dotted #ddd;}
+.section-item-right{float:left;width:900px;margin-left:10px;text-align:center;}
+.section-item-right li{float:left;width:100px;margin:0px 10px;
+padding-bottom:10px;}
+.w1200{margin:0 auto;}
+.price{border:1px solid #ddd;float:left;width:70px;
+height:28px;margin-left:40px;}
+.price input{width:44px;height:26px;border:0}
+.mid_jian{float:left;padding:10px;margin-left:20px;}
+.price_btn{float:left;margin-left:10px;padding:5px 20px;
+background:#FFE1ED;color:#333;border:0;}
+#listheader{border:1px solid #ddd;}
+.section-item4 a{float: left;
+    display: inline;
+    padding: 0 27px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    color: #666;
+    border-right: 1px solid #d9d9d9;}
+
+.w1200{width:1200px;margin:0 auto;}
+.section-item4{
+float:left;
+width:1200px;
+border:1px solid #d9d9d9;
+}
+.hr{width:1200px;height:30px;background:#EAEAEA;float:left;}
+.section-item4 .moren{border-bottom:none;color:#D70057;}
+/***********container***********/
+.container{width:1349px;min-height:1000px;float:left;}
+.shop_list{width:1200px;height:2000px;margin:0 auto;border:1px solid #ddd;}
+.shop_list ul li{float:left;width:270px;border:1px solid #ddd;
+height:394px;margin-left:20px;margin-top:20px;margin-bottom:10px;text-align:center;}
+.shop_list ul li:hover{border:1px solid #e4393c;}
+.bglg{height: 50px;
+    margin-bottom: 10px;
+    display: block;
+    width: auto;}
+	.pro_price{margin-top: 6px;
+    text-align: center;
+    display: block;
+    color: #d70057;
+}
+.goumai_price{    font-size: 18px;
+    font-weight: normal;
+    margin-left: 3px;
+}
+.pro_price i{    color: #999;text-decoration: line-through;}
